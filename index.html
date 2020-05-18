@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yimei Fan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">Yimei Fan</td>
+                <td id="navigation">
+                    <a href="#work">work</a>
+                    <a href="#resume">resume</a>
+                    <!--<a href="">resume</a>**/-->
+                    <a href="#bio">about</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>Hi! This is Yimei, a Product Analyst Intern @Square.</h1>
+                <!--<button class="btn_one" href = "#contact">contact</button>-->
+				<a href="#contact" class="btn_one">contact</a><br>
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href = "https://www.linkedin.com/in/yimeifan120/" target = "_blank"><i class="fab fa-linkedin" ></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href = "https://medium.com/@ms.yimeifan" target = "_blank"><i class="fab fa-medium"></i></a></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <div id="work">
+        <h1>work</h1>
+        <div id="photos">
+		    <a href = "https://nbviewer.jupyter.org/github/Yimei120/COVID19-Interactive-Analysis/blob/master/Interactive_COVID19.ipynb" target = "_blank">
+            <img onclick="magnify($(this).attr('src'))" src="covid19.jpg">
+			</a>
+			<a href = "https://github.com/Yimei120/Machine-Learning-Project/tree/master" target = "_blank">
+            <img onclick="magnify($(this).attr('src'))" src="WNV.png">
+			</a>
+			<a href = "https://github.com/Yimei120/Python-Carolina-Hackthon" target = "_blank">
+            <img onclick="magnify($(this).attr('src'))" src="ca.jpg">
+			</a>
+            <!--<img onclick="magnify($(this).attr('src'))" src="">-->
+			<a href = "https://github.com/Yimei120/Polynomial-Regression-B-spline-natrual-cubic-spline-/blob/master/LDA.pdf" target = "_blank">
+            <img onclick="magnify($(this).attr('src'))" src="R.svg">
+			</a>
+            <img onclick="magnify($(this).attr('src'))" src="">
+            <img onclick="magnify($(this).attr('src'))" src="">
+            <img onclick="magnify($(this).attr('src'))" src="">
+        </div>
+    </div>
+	<div id = "resume">
+		<h1>resume</h1>
+		<p>For my latest resume, please click<a href = "CV_Yimei_Fan.pdf" target = "_blank"> Here.</a></p>
+	
+	
+	</div>
+    <div id="bio">
+        <h1>about</h1>
+        <p>
+            • Second-year master student in Information Science
+		</p>
+		<p>
+			• Incoming summer intern at Square
+		</p>
+		<p>
+			• Passionate about data analysis, machine learning and data visualization
+		</p>
+		<p>
+			• creative, diligent, multi-tasking
+		</p>
+		<p>
+			• cat person
+		</p>
+        
+        <p>
+            
+        </p>
+    </div>
+    <div id="contact">
+        <h1>contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +1 404 421 3025</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; yimei@live.unc.edu</td>
+                                </tr>
+                                 <!--<tr>
+                                    <td><i class="fas fa-fax"></i> &nbsp; +1 234 567 8910</td>
+                                </tr>-->
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        1105 W NC Highway 54 Bypass,<br>
+                                        Chapel Hill,<br>
+                                        North Carolina, NC 27516
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    
+                                        <a class="social" href = "https://www.linkedin.com/in/yimeifan120/" target = "_blank"><i class="fab fa-linkedin"></i></a>
+                                        <a class="social" href = "https://medium.com/@ms.yimeifan" target = "_blank"><i class="fab fa-medium"></i></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <form action="mailto:yimei@live.unc.edu" method="post" enctype="text/plain">
+						<div id= "">
+						<h2>Would like to know more about me?</h2>
+						</div>
+                            <!--<input type="text" placeholder="" required><br>-->
+                            <!--<input type="email" placeholder="email" required><br>-->
+                            <!--<textarea placeholder="your message" required rows="5"></textarea><br>-->
+                            <button class="btn_one">Send me an email!</button>
+                        </form> 
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="footer">
+       
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
