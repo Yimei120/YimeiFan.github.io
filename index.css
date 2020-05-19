@@ -411,16 +411,12 @@ button:focus {
 	
 }
 
-@media (max-width: 767px){
+@media (max-width: 960px){
 	
-#top_part h1 {
-    width:80%;
-    border:2vh solid #fff;
-}
-#logo {
-    font-size:5px;
-    color:rgb(255, 44, 90);
-}
+header {
+    padding-top: 29px;
+    padding-bottom: 29px;
+   }
 	
 }
 
