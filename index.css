@@ -417,6 +417,10 @@ header {
     padding-top: 29px;
     padding-bottom: 29px;
    }
+   
+   header table {
+    width:50%;
+}
 	
 }
 
