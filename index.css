@@ -413,8 +413,9 @@ button:focus {
 
 @media (max-width: 480px){
 	
-	#logo {
-    width:0%;
+#top_part h1 {
+    width:80%;
+    border:2vh solid #fff;
 }
 	
 }
