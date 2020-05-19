@@ -413,14 +413,11 @@ button:focus {
 
 @media (max-width: 960px){
 	
-header {
+#header {
     padding-top: 29px;
     padding-bottom: 29px;
    }
    
-   header table {
-    width:50%;
-}
 	
 }
 
