@@ -411,3 +411,12 @@ button:focus {
 	
 }
 
+@media (max-width: 480px){
+	
+	header {
+    float: none;
+    height: auto;
+  }
+	
+}
+
